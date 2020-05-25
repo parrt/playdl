@@ -26,4 +26,5 @@ Generating text
 
 PyTorch
 
+* [Gradient descent in pytorch](notebooks/pytorch-gradient-descent.ipynb)
 * [A start on collaborative filtering](notebooks/collaborative-filtering.ipynb)
