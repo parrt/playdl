@@ -35,7 +35,7 @@ PyTorch seems a bit more low-level but it's very cool and easy to use. It is ess
 Now, I've had some very good luck building my own collaborative filtering mechanism using my own gradient descent with momentum in raw pytorch. I am more or less able to get the same predictive ability using matrix factorization that I did with the deep learning version above. Implemented gradient descent with momentum and then full AdaGrad.  Didn't do any minibatching.
 
 * [Collaborative filtering with pytorch](notebooks/collaborative-filtering.ipynb) (Cool. learned to display interactive graphs with [bokeh](https://docs.bokeh.org/en/latest/index.html) too!)<br>
-<img src="images/bokeh-demo.png" width="50%">
+<img src="images/bokeh-demo.png" width="35%">
 
 Recurrent neural networks
 
