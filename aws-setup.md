@@ -27,7 +27,14 @@ For keras:
 source activate tensorflow2_p36
 ```
 
-## Needed installs
+## Needed installs / setup
+
+**Git**
+
+```
+git config --global user.email parrt@antlr.org
+git config --global user.name "Terence Parr"
+```
 
 Make sure to enable this to see progress bars for keras/tensorflow:
 
