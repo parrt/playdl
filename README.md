@@ -2,6 +2,10 @@
 
 This repository is just a collection of notebooks that I'm using to explore various deep learning (DL) concepts and APIs (such as keras).  The mathematics behind the networks is straightforward but tedious so I'm focusing on applying networks.
 
+## AWS stuff
+
+* [Remote jupyter lab access](aws-setup.md)
+
 ## Deep learning image classification
 
 Previously I tried DL for regression on some tabular data, but it struggles to keep up with the simple random forest. DL shines with unstructured data so I turned to the standard hello world of MNIST classification:
