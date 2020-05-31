@@ -52,7 +52,7 @@ I'm going to start again on collaborative filtering with pytorch: [Regularized c
 * I also found that simple gradient descent with momentum did a pretty good job and I didn't need the complexity of AdaGrad.
 * Another trick from fastai book is to keep the predicted rating in the range 0..5, which constrains where the loss function can send gradient descent.
 
-Dang.  I still don't think I'm getting a good result and it is likely my simple gradient descent mechanism.  I'm going to try this over again using the built-in pytorch optimizers.
+Dang.  I still don't think I'm getting a good result and it is likely my simple gradient descent mechanism.  I'm going to try this over again using the built-in pytorch optimizers. Ha. was most likely incorrect assessment and display issues with indexing. All is well now:
 
 * [Collaborative filtering with pytorch optimizers](notebooks/collaborative-filtering-pytorch-optimizers.ipynb)
 
