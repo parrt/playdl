@@ -58,5 +58,9 @@ Dang.  I still don't think I'm getting a good result and it is likely my simple 
 
 ## Recurrent neural networks
 
+I'm going to try working through the keras book examples using pytorch:
+
+* []()
+
 ## Generating text
 
