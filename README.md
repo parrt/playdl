@@ -62,7 +62,7 @@ I'm going to try working through the keras book examples using pytorch:
 
 * [IMDB using pytorch and embeddings](imdb-sentiment-pytorch.ipynb)
 
-oooook. It turns out I was using just 1000 training in 1000 testing records but Keras was using a much bigger data set with 25,000 records each. I can then using my PyTorch methods get roughly the same 75% accuracy from the Keras book. I redid everything in this notebook:
+oooook. It turns out I was using just 1000 training and 1000 testing records but Keras was using a much bigger data set with 25,000 records each. I can then using my PyTorch methods get roughly the same 75% accuracy from the Keras book. I redid everything in this notebook:
 
 * [IMDB using pytorch but keras to load data](imdb-pytorch-keras-data.ipynb)
 
