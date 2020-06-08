@@ -70,7 +70,7 @@ oooook. It turns out I was using just 1000 training and 1000 testing records but
 
 * [Playing with linear algebra for neural nets](https://github.com/parrt/playdl/blob/master/notebooks/matrices.ipynb) Just playing with matrix dimensions so far
 * [Numpy only for forward step of RNN](https://github.com/parrt/playdl/blob/master/notebooks/RNN-numpy.ipynb)
-* [RNN using tensors not neuron layers; predicts sin(y)](https://github.com/parrt/playdl/blob/master/notebooks/RNN.ipynb):<br>
+* [RNN using tensors not neuron layers; predicts sin(y)](https://github.com/parrt/playdl/blob/master/notebooks/RNN-sine.ipynb):<br>
 <img src="images/siny_pred.png" width="30%">
 
 ## Generating text
