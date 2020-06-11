@@ -72,7 +72,7 @@ oooook. It turns out I was using just 1000 training and 1000 testing records but
 * [Numpy only for forward step of RNN](https://github.com/parrt/playdl/blob/master/notebooks/RNN-numpy.ipynb)
 * [RNN using tensors not neuron layers; predicts sin(y)](https://github.com/parrt/playdl/blob/master/notebooks/RNN-sine.ipynb):<br>
 <img src="images/siny_pred.png" width="30%">
-* [RNN for last name -> language classification](https://github.com/parrt/playdl/blob/master/notebooks/RNN-lastname.ipynb)
+* [RNN for last name -> language classification](https://github.com/parrt/playdl/blob/master/notebooks/RNN-lastname.ipynb) Three ways: record-by-record, all records' jth char vec at once using raw matrices, again using torch.nn layers.
 
 ## Generating text
 
