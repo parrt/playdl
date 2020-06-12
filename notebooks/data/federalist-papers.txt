@@ -25,11 +25,11 @@ THE UTILITY OF THE UNION TO YOUR POLITICAL PROSPERITY THE INSUFFICIENCY OF THE P
 
 In the progress of this discussion I shall endeavor to give a satisfactory answer to all the objections which shall have made their appearance, that may seem to have any claim to your attention.
 
-It may perhaps be thought superfluous to offer arguments to prove the utility of the UNION, a point, no doubt, deeply engraved on the hearts of the great body of the people in every State, and one, which it may be imagined, has no adversaries. But the fact is, that we already hear it whispered in the private circles of those who oppose the new Constitution, that the thirteen States are of too great extent for any general system, and that we must of necessity resort to separate confederacies of distinct portions of the whole.1 This doctrine will, in all probability, be gradually propagated, till it has votaries enough to countenance an open avowal of it. For nothing can be more evident, to those who are able to take an enlarged view of the subject, than the alternative of an adoption of the new Constitution or a dismemberment of the Union. It will therefore be of use to begin by examining the advantages of that Union, the certain evils, and the probable dangers, to which every State will be exposed from its dissolution. This shall accordingly constitute the subject of my next address.
+It may perhaps be thought superfluous to offer arguments to prove the utility of the UNION, a point, no doubt, deeply engraved on the hearts of the great body of the people in every State, and one, which it may be imagined, has no adversaries. But the fact is, that we already hear it whispered in the private circles of those who oppose the new Constitution, that the thirteen States are of too great extent for any general system, and that we must of necessity resort to separate confederacies of distinct portions of the whole. This doctrine will, in all probability, be gradually propagated, till it has votaries enough to countenance an open avowal of it. For nothing can be more evident, to those who are able to take an enlarged view of the subject, than the alternative of an adoption of the new Constitution or a dismemberment of the Union. It will therefore be of use to begin by examining the advantages of that Union, the certain evils, and the probable dangers, to which every State will be exposed from its dissolution. This shall accordingly constitute the subject of my next address.
 
 PUBLIUS.
 
-The same idea, tracing the arguments to their consequences, is held out in several of the late publications against the new Constitution. Back to text
+The same idea, tracing the arguments to their consequences, is held out in several of the late publications against the new Constitution. 
 FEDERALIST NO. 2
 Concerning Dangers from Foreign Force and Influence
 
@@ -209,11 +209,11 @@ A man must be far gone in Utopian speculations who can seriously doubt that, if 
 
 The causes of hostility among nations are innumerable. There are some which have a general and almost constant operation upon the collective bodies of society. Of this description are the love of power or the desire of pre-eminence and dominion--the jealousy of power, or the desire of equality and safety. There are others which have a more circumscribed though an equally operative influence within their spheres. Such are the rivalships and competitions of commerce between commercial nations. And there are others, not less numerous than either of the former, which take their origin entirely in private passions; in the attachments, enmities, interests, hopes, and fears of leading individuals in the communities of which they are members. Men of this class, whether the favorites of a king or of a people, have in too many instances abused the confidence they possessed; and assuming the pretext of some public motive, have not scrupled to sacrifice the national tranquillity to personal advantage or personal gratification.
 
-The celebrated Pericles, in compliance with the resentment of a prostitute,1 at the expense of much of the blood and treasure of his countrymen, attacked, vanquished, and destroyed the city of the SAMNIANS. The same man, stimulated by private pique against the MEGARENSIANS, 2 another nation of Greece, or to avoid a prosecution with which he was threatened as an accomplice of a supposed theft of the statuary Phidias, 3or to get rid of the accusations prepared to be brought against him for dissipating the funds of the state in the purchase of popularity, 4 or from a combination of all these causes, was the primitive author of that famous and fatal war, distinguished in the Grecian annals by the name of the PELOPONNESIAN war; which, after various vicissitudes, intermissions, and renewals, terminated in the ruin of the Athenian commonwealth.
+The celebrated Pericles, in compliance with the resentment of a prostitute, 1 at the expense of much of the blood and treasure of his countrymen, attacked, vanquished, and destroyed the city of the SAMNIANS. The same man, stimulated by private pique against the MEGARENSIANS, 2 another nation of Greece, or to avoid a prosecution with which he was threatened as an accomplice of a supposed theft of the statuary Phidias, 3 or to get rid of the accusations prepared to be brought against him for dissipating the funds of the state in the purchase of popularity, 4 or from a combination of all these causes, was the primitive author of that famous and fatal war, distinguished in the Grecian annals by the name of the PELOPONNESIAN war; which, after various vicissitudes, intermissions, and renewals, terminated in the ruin of the Athenian commonwealth.
 
 The ambitious cardinal, who was prime minister to Henry VIII., permitting his vanity to aspire to the triple crown, 5 entertained hopes of succeeding in the acquisition of that splendid prize by the influence of the Emperor Charles V. To secure the favor and interest of this enterprising and powerful monarch, he precipitated England into a war with France, contrary to the plainest dictates of policy, and at the hazard of the safety and independence, as well of the kingdom over which he presided by his counsels, as of Europe in general. For if there ever was a sovereign who bid fair to realize the project of universal monarchy, it was the Emperor Charles V., of whose intrigues Wolsey was at once the instrument and the dupe.
 
-The influence which the bigotry of one female, 6 the petulance of another, 7and the cabals of a third, 8 had in the contemporary policy, ferments, and pacifications, of a considerable part of Europe, are topics that have been too often descanted upon not to be generally known.
+The influence which the bigotry of one female, 6 the petulance of another, 7 and the cabals of a third, 8 had in the contemporary policy, ferments, and pacifications, of a considerable part of Europe, are topics that have been too often descanted upon not to be generally known.
 
 To multiply examples of the agency of personal considerations in the production of great national events, either foreign or domestic, according to their direction, would be an unnecessary waste of time. Those who have but a superficial acquaintance with the sources from which they are to be drawn, will themselves recollect a variety of instances; and those who have a tolerable knowledge of human nature will not stand in need of such lights to form their opinion either of the reality or extent of that agency. Perhaps, however, a reference, tending to illustrate the general principle, may with propriety be made to a case which has lately happened among ourselves. If Shays had not been a DESPERATE DEBTOR, it is much to be doubted whether Massachusetts would have been plunged into a civil war.
 
@@ -231,7 +231,7 @@ The provinces of Holland, till they were overwhelmed in debts and taxes, took a 
 
 In the government of Britain the representatives of the people compose one branch of the national legislature. Commerce has been for ages the predominant pursuit of that country. Few nations, nevertheless, have been more frequently engaged in war; and the wars in which that kingdom has been engaged have, in numerous instances, proceeded from the people.
 
-There have been, if I may so express it, almost as many popular as royal wars. The cries of the nation and the importunities of their representatives have, upon various occasions, dragged their monarchs into war, or continued them in it, contrary to their inclinations, and sometimes contrary to the real interests of the State. In that memorable struggle for superiority between the rival houses of AUSTRIA and BOURBON, which so long kept Europe in a flame, it is well known that the antipathies of the English against the French, seconding the ambition, or rather the avarice, of a favorite leader, 10protracted the war beyond the limits marked out by sound policy, and for a considerable time in opposition to the views of the court.
+There have been, if I may so express it, almost as many popular as royal wars. The cries of the nation and the importunities of their representatives have, upon various occasions, dragged their monarchs into war, or continued them in it, contrary to their inclinations, and sometimes contrary to the real interests of the State. In that memorable struggle for superiority between the rival houses of AUSTRIA and BOURBON, which so long kept Europe in a flame, it is well known that the antipathies of the English against the French, seconding the ambition, or rather the avarice, of a favorite leader, 10 protracted the war beyond the limits marked out by sound policy, and for a considerable time in opposition to the views of the court.
 
 The wars of these two last-mentioned nations have in a great measure grown out of commercial considerations,--the desire of supplanting and the fear of being supplanted, either in particular branches of traffic or in the general advantages of trade and navigation.
 
@@ -241,19 +241,6 @@ Let the point of extreme depression to which our national dignity and credit hav
 
 So far is the general sense of mankind from corresponding with the tenets of those who endeavor to lull asleep our apprehensions of discord and hostility between the States, in the event of disunion, that it has from long observation of the progress of society become a sort of axiom in politics, that vicinity or nearness of situation, constitutes nations natural enemies. An intelligent writer expresses himself on this subject to this effect: "NEIGHBORING NATIONS (says he) are naturally enemies of each other unless their common weakness forces them to league in a CONFEDERATE REPUBLIC, and their constitution prevents the differences that neighborhood occasions, extinguishing that secret jealousy which disposes all states to aggrandize themselves at the expense of their neighbors."11 This passage, at the same time, points out the EVIL and suggests the REMEDY.
 
-PUBLIUS.
-
-Aspasia, vide "Plutarch's Life of Pericles." Back to text
-Ibid. Back to text
-Ibid. Back to text
-Ibid. Phidias was supposed to have stolen some public gold, with the connivance of Pericles, for the embellishment of the statue of Minerva. Back to text
-P Worn by the popes. Back to text
-Madame de Maintenon. Back to text
-Duchess of Marlborough. Back to text
-Madame de Pompadour. Back to text
-The League of Cambray, comprehending the Emperor, the King of France, the King of Aragon, and most of the Italian princes and states. Back to text
-The Duke of Marlborough. Back to text
-Vide "Principes des Negociations" par 1'Abbe de Mably. Back to text
 FEDERALIST NO. 7
 The Same Subject Continued: Concerning Dangers from Dissensions Between the States
 
@@ -281,12 +268,12 @@ Suppose the difficulties of agreeing upon a rule surmounted, and the apportionme
 
 Laws in violation of private contracts, as they amount to aggressions on the rights of those States whose citizens are injured by them, may be considered as another probable source of hostility. We are not authorized to expect that a more liberal or more equitable spirit would preside over the legislations of the individual States hereafter, if unrestrained by any additional checks, than we have heretofore seen in too many instances disgracing their several codes. We have observed the disposition to retaliation excited in Connecticut in consequence of the enormities perpetrated by the Legislature of Rhode Island; and we reasonably infer that, in similar cases, under other circumstances, a war, not of PARCHMENT, but of the sword, would chastise such atrocious breaches of moral obligation and social justice.
 
-The probability of incompatible alliances between the different States or confederacies and different foreign nations, and the effects of this situation upon the peace of the whole, have been sufficiently unfolded in some preceding papers. From the view they have exhibited of this part of the subject, this conclusion is to be drawn, that America, if not connected at all, or only by the feeble tie of a simple league, offensive and defensive, would, by the operation of such jarring alliances, be gradually entangled in all the pernicious labyrinths of European politics and wars; and by the destructive contentions of the parts into which she was divided, would be likely to become a prey to the artifices and machinations of powers equally the enemies of them all. Divide et impera1 must be the motto of every nation that either hates or fears us.2
+The probability of incompatible alliances between the different States or confederacies and different foreign nations, and the effects of this situation upon the peace of the whole, have been sufficiently unfolded in some preceding papers. From the view they have exhibited of this part of the subject, this conclusion is to be drawn, that America, if not connected at all, or only by the feeble tie of a simple league, offensive and defensive, would, by the operation of such jarring alliances, be gradually entangled in all the pernicious labyrinths of European politics and wars; and by the destructive contentions of the parts into which she was divided, would be likely to become a prey to the artifices and machinations of powers equally the enemies of them all. Divide et impera must be the motto of every nation that either hates or fears us.
 
 PUBLIUS.
 
-Divide and command. Back to text
-In order that the whole subject of these papers may as soon as possible be laid before the public, it is proposed to publish them four times a week--on Tuesday in the New York Packet and on Thursday in the Daily Advertiser. Back to text
+In order that the whole subject of these papers may as soon as possible be laid before the public, it is proposed to publish them four times a week--on Tuesday in the New York Packet and on Thursday in the Daily Advertiser.
+
 FEDERALIST NO. 8
 The Consequences of Hostilities Between the States
 
@@ -325,7 +312,7 @@ This is an idea not superficial or futile, but solid and weighty. It deserves th
 
 PUBLIUS.
 
-This objection will be fully examined in its proper place, and it will be shown that the only natural precaution which could have been taken on this subject has been taken; and a much better one than is to be found in any constitution that has been heretofore framed in America, most of which contain no guard at all on this subject. Back to text
+This objection will be fully examined in its proper place, and it will be shown that the only natural precaution which could have been taken on this subject has been taken; and a much better one than is to be found in any constitution that has been heretofore framed in America, most of which contain no guard at all on this subject. 
 FEDERALIST NO. 9
 The Union as a Safeguard Against Domestic Faction and Insurrection
 
@@ -371,7 +358,6 @@ In the Lycian confederacy, which consisted of twenty-three CITIES or republics, 
 
 PUBLIUS.
 
-"Spirit of Lawa,'' vol. i., book ix., chap. i. Back to text
 FEDERALIST NO. 10
 The Same Subject Continued: The Union as a Safeguard Against Domestic Faction and Insurrection
 
