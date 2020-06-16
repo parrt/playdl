@@ -74,8 +74,16 @@ oooook. It turns out I was using just 1000 training and 1000 testing records but
 <img src="images/siny_pred.png" width="30%">
 
 * [RNN for last name -> language classification](https://github.com/parrt/playdl/blob/master/notebooks/RNN-lastname.ipynb) Three ways: record-by-record, all records' jth char vec at once using raw matrices, again using torch.nn layers.
-* [LSTM for last name -> language classification](https://github.com/parrt/playdl/blob/master/notebooks/LSTM-lastname.ipynb) (using torch nn layers)
-* [Same LSTM using Keras](notebooks/LSTM-lastname-keras.ipynb)
 
 ## Generating text
+
+* [LSTM for last name -> language classification](https://github.com/parrt/playdl/blob/master/notebooks/LSTM-lastname.ipynb) (using torch nn layers)
+* [Same LSTM using Keras](notebooks/LSTM-lastname-keras.ipynb)
+* [Playing with fastai sample data](notebooks/LSTM-fastai-data.ipynb)
+* [Try to generate Federalist papers like text](notebooks/LSTM-generate.ipynb)
+* [Keras: LSTM for last name -> language classification](notebooks/LSTM-lastname-keras.ipynb)
+* [LSTM for last name -> language classification](notebooks/LSTM-generate-chars.ipynb)
+
+
+
 
