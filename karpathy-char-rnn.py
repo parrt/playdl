@@ -50,7 +50,8 @@ def lossFun(inputs, targets, hprev):
         hs[t] = np.tanh(np.dot(Wxh, xs[t]) + np.dot(Whh, hs[t - 1]) + bh)  # hidden state
         ys[t] = np.dot(Why, hs[t]) + by  # unnormalized log probabilities for next chars
         ps[t] = np.exp(ys[t]) / np.sum(np.exp(ys[t]))  # probabilities for next chars
-        loss += -np.log(ps[t][targets[t], 0])  # softmax (cross-entropy loss)
+        p_of_target = ps[t][targets[t], 0]
+        loss += -np.log(p_of_target)  # softmax (cross-entropy loss)
 
     # backward pass: compute gradients going backwards
     dWxh, dWhh, dWhy = np.zeros_like(Wxh), np.zeros_like(Whh), np.zeros_like(Why)
