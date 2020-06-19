@@ -100,11 +100,11 @@ def forward1(x):
     # run through a final layer to map that h to a one-hot encoded predicted class
 #         h = dropout(h, p=0.4)
     o = V.mm(h)# + Vb
-    # o = o.reshape(1,nclasses)
+    o = o.reshape(1,nclasses)
 #     print(torch.sum(o[0]).item())
-#     o = F.softmax(o, dim=1)
-    # o = softmax(o)
+    o = softmax(o)
     return o
+
 
 def forward(X:Sequence[Sequence]):#, apply_softmax=True):
     "Cut-n-paste from body of training for use with metrics"
@@ -286,19 +286,12 @@ for epoch in range(1, epochs + 1):
     epoch_training_accur = 0.0
     for i in range(0, n): # an epoch trains all input records
         x = X_train[i]
-        # o = forward([x])
-        o = forward1(x)
-        o = o.reshape(1, nclasses)
-        if i<0:
-            print(o)
-            torchviz.make_dot(o).view()
-        '''
+        # o = forward1(x)
 #         print(i,x)
         h = torch.zeros(nhidden, 1, dtype=torch.float64, device=device, requires_grad=False)  # reset hidden state at start of record
         for j in range(len(x)):  # for each char in a name
             x_onehot = onehot(x[j])
             h = W.mm(h) + U.mm(x_onehot)# + b
-#             h = torch.tanh(h)  # squish to (-1,+1)
             h = torch.relu(h)
 #             print("h",h)
         # h is output of RNN, a fancy CBOW embedding for variable-length sequence in x
@@ -308,8 +301,8 @@ for epoch in range(1, epochs + 1):
         o = o.reshape(1,nclasses)
         o = softmax(o)
 #             print("softmax",o,"y_train[i]",y_train[i])
-        '''
-        loss = F.cross_entropy(o, torch.tensor([y_train[i]],dtype=torch.long))
+
+        loss = cross_entropy(o, y_train[i])
         optimizer.zero_grad()
         loss.backward() # autograd computes U.grad, M.grad, ...
         optimizer.step()
@@ -326,16 +319,13 @@ for epoch in range(1, epochs + 1):
 
     with torch.no_grad():
         o = forward(X_train)#, apply_softmax=False)
-        # train_loss = cross_entropy(o, y_train)
-        train_loss = F.cross_entropy(o, y_train)
-        correct = torch.argmax(o, dim=1).cpu()==y_train
+        train_loss = cross_entropy(o, y_train)
+        correct = torch.argmax(o, dim=1).detach().cpu()==y_train
         train_accur = torch.sum(correct) / float(len(X_train))
 
         o = forward(X_valid)
-        outputs = [forward1(x) for x in X_valid]
-        # valid_loss = cross_entropy(o, y_valid)
-        valid_loss = F.cross_entropy(o, torch.tensor(y_valid,dtype=torch.long))
-        correct = torch.argmax(o, dim=1)==torch.tensor(y_valid)
+        valid_loss = cross_entropy(o, y_valid)
+        correct = torch.argmax(o, dim=1).detach().cpu()==y_valid
         valid_accur = torch.sum(correct) / float(len(X_valid))
 
         # valid_loss = 0.0
