@@ -1,0 +1,23 @@
+Neural Machine Translation by Jointly Learning to Align and Translate
+https://arxiv.org/abs/1409.0473
+
+decoder gives T_x vectors, h_j, not just final one like Cho. Don't squish all sentence info into single fixed vector.
+
+soft-alignment is vector of probabilities for each input position i. Hard would be exactly 1 input position i. So for T_y output we'd get a vector of length T_y with int indexes from input in it it.  For soft, we get matrix mapping output position i to attended input j.  Positions i are still absolute not relative.
+
+h_j are cat of forw and backw RNNs (GRUs)
+
+attention used in decoder, not encoder, to focus on h_j that help predict y_i. encoder just creates the h_j used by decoder.
+
+one h_j for each input position j; encodes left-right context around j in soft way
+
+each i in output has a context vector c_i computed as weighted average of h_j where \alpha_{i,j} are the probabilities that j region in input is useful for generating i.
+
+\alpha_{i,j} are softmax of e_{i,j}, which scores relationship using decoder hidden state s_{i-1} and encoder hidden state h_j
+
+Why are absolute (region) locations j suitable? Is relative better? Imagine input sentence swith "red car" and output translations with "voiture rouge" at lots of different positions.  Why would alignment focused on an absolute index help?
+
+Cho 2014's model has fixed c_i as last RNN h vector from input
+
+---------------------
+transformer. why doesn't position vector added to word embedding mess up the embedding?

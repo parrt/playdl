@@ -84,6 +84,9 @@ oooook. It turns out I was using just 1000 training and 1000 testing records but
 * [Keras: LSTM for last name -> language classification](notebooks/LSTM-lastname-keras.ipynb)
 * [LSTM for last name -> language classification](notebooks/LSTM-generate-chars.ipynb)
 
+Ok, starting again using simple RNN using matrix alg from my article.
 
+* [Generate lastnames for specific language](notebooks/RNN-generate-lastname.ipynb)
+* [Generate obama speeches](notebooks/RNN-generate-obama.ipynb)
 
 
