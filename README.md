@@ -91,3 +91,8 @@ Ok, starting again using simple RNN using matrix alg from my article.
 * [Generate obama speeches, truncated backpropagation](notebooks/RNN-generate-bptt-obama.ipynb) This version attempts to  divide up the entire text into chunks and then use a single batch containing all chunks. Then inside the training loop I can occasionally wipe out the gradient but keep the hidden state accumulating.
 * [Generate obama speeches, add embedding layer](notebooks/RNN-generate-embedding-obama.ipynb) Adding embedding of chars before RNN helps. make len(vocab)->small embedding like 20 squeezes into more meaningful embedding than one of size len(vocab).
 
+## Lessons
+
+Some notes beyond what is in the notebooks
+
+* the role of a neuron or layer is fluid. the output of a layer could be the probability of class k but, if we add a further layer, it could become a feature that helps the new layer predict features.
