@@ -96,3 +96,4 @@ Ok, starting again using simple RNN using matrix alg from my article.
 Some notes beyond what is in the notebooks
 
 * the role of a neuron or layer is fluid. the output of a layer could be the probability of class k but, if we add a further layer, it could become a feature that helps the new layer predict features.
+* relu for RNN also works, not just tanh for obama speeches. use 0 bias, identity for W. clip gradient values to 1.0. Must use `F.cross_entropy()` which combines softmax with that. much better numerical characteristics. Otherwise get NaN immediately.  Clipping isn't required it seems but improves convergence. Seems to tolerate higher learning rate. Can't see to get relu version to match final accuracy score of tanh.
