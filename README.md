@@ -90,6 +90,8 @@ Ok, starting again using simple RNN using matrix alg from my article.
 * [Generate obama speeches](notebooks/RNN-generate-obama.ipynb) This works but the hidden state is reset at the start of every small chunk in order to get truncated back propagation.
 * [Generate obama speeches, truncated backpropagation](notebooks/RNN-generate-bptt-obama.ipynb) This version attempts to  divide up the entire text into chunks and then use a single batch containing all chunks. Then inside the training loop I can occasionally wipe out the gradient but keep the hidden state accumulating.
 * [Generate obama speeches, add embedding layer](notebooks/RNN-generate-embedding-obama.ipynb) Adding embedding of chars before RNN helps. make len(vocab)->small embedding like 20 squeezes into more meaningful embedding than one of size len(vocab).
+* [Generate obama speeches using 2 stacked RNNs](notebooks/RNN-generate-stacked-obama.ipynb). REALLY hard to train. had to play with weight initialization a lot and learning rate. Only got it to 49% accurate on 1M text size. Tried using `h` and `o` from RNN 1 as input to RNN 2. This was done with chunks.
+* [Generate obama speeches using 2 stacked RNNs but non-chunked](notebooks/RNN-generate-stacked-nonchunked-obama.ipynb) Slow but easier to understand since `h` is just a vector not a matrix.
 
 ## Lessons
 
