@@ -93,6 +93,10 @@ Ok, starting again using simple RNN using matrix alg from my article.
 * [Generate obama speeches using 2 stacked RNNs](notebooks/RNN-generate-stacked-obama.ipynb). REALLY hard to train. had to play with weight initialization a lot and learning rate. Only got it to 49% accurate on 1M text size. Tried using `h` and `o` from RNN 1 as input to RNN 2. This was done with chunks.
 * [Generate obama speeches using 2 stacked RNNs but non-chunked](notebooks/RNN-generate-stacked-nonchunked-obama.ipynb) Slow but easier to understand since `h` is just a vector not a matrix.
 
+## Transducers
+
+* [RNN Encoder-decoder](notebooks/encoder-decoder.ipynb) An RNN computes `h` context vector for input and then we use that context + RNN to generate tokens from output sequence.  Data is the human numbers set from [fastai book chap 12](https://github.com/fastai/fastbook/blob/master/12_nlp_dive.ipynb).
+
 ## Lessons
 
 Some notes beyond what is in the notebooks
