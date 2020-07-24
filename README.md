@@ -95,7 +95,9 @@ Ok, starting again using simple RNN using matrix alg from my article.
 
 ## Transducers
 
-* [RNN Encoder-decoder](notebooks/encoder-decoder.ipynb) An RNN computes `h` context vector for input and then we use that context + RNN to generate tokens from output sequence.  Data is the human numbers set from [fastai book chap 12](https://github.com/fastai/fastbook/blob/master/12_nlp_dive.ipynb).
+* [RNN human numbers to integer value classifier](notebooks/numbers-classifier.ipynb) Classifier to 1, 2, 3, ... Data is the human numbers set from [fastai book chap 12](https://github.com/fastai/fastbook/blob/master/12_nlp_dive.ipynb).  A warm up for vectorized encoder.
+* [Record-by-record RNN Encoder-decoder](notebooks/encoder-decoder.ipynb) An RNN computes `h` context vector for input and then we use that context + RNN to generate tokens from output sequence.  Convert 'twenty one' to '21', etc...
+* [Vectorized RNN Encoder-decoder](notebooks/encoder-decoder-vectorized.ipynb) Vectorize the encoder-decoder from previous notebook
 
 ## Lessons
 
@@ -104,3 +106,4 @@ Some notes beyond what is in the notebooks
 * the role of a neuron or layer is fluid. the output of a layer could be the probability of class k but, if we add a further layer, it could become a feature that helps the new layer predict features.
 * relu for RNN also works, not just tanh for obama speeches. use 0 bias, identity for W. clip gradient values to 1.0. Must use `F.cross_entropy()` which combines softmax with that. much better numerical characteristics. Otherwise get NaN immediately.  Clipping isn't required it seems but improves convergence. Seems to tolerate higher learning rate. Can't see to get relu version to match final accuracy score of tanh. Actually at epoch 20, tanh gets 55% and relu gets 63% (same 0.001 learning rate and relu clipped grad values at 10). Hmm...i have logs of some tanh runs though that are 64% at epoch 20. damn hyperparameters.
 * Training is **super** sensitive to weight initialization. Using sd=0.001 training didn't move. With 1.0 it is too far away sometimes from final weights. Couldn't figure out why my stacked RNN wasn't training. sd=0.001 seems too low. Well, if you run multiple times with sd=0.001 sometimes it works. frustrating to train these beasts. Even more complicated. Seems to eventually start to convert/train after maybe 10 trivial/no movements. 
+* A general principle for autograd with pytorch: you can’t reuse partial results from one optimization step to the next, despite that being OK if we were doing symbolic derivatives. It’s just a limitation of how dynamic auto gradients are computed. E.g., I wanted to use a single output vector (the last `h`) from the encoder in the multiple steps of the decoder but got the dreaded `Trying to backward through the graph a second time, but the buffers have already been freed.` Each decoder step is a function of that previous single encoder `h` and pytorch can only compute the derivative through a series of operations once.  Tried `loss.backward(retain_graph=True)` w/o success too.
