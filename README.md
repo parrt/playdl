@@ -92,6 +92,7 @@ Ok, starting again using simple RNN using matrix alg from my article.
 * [Generate obama speeches, add embedding layer](notebooks/RNN-generate-embedding-obama.ipynb) Adding embedding of chars before RNN helps. make len(vocab)->small embedding like 20 squeezes into more meaningful embedding than one of size len(vocab).
 * [Generate obama speeches using 2 stacked RNNs](notebooks/RNN-generate-stacked-obama.ipynb). REALLY hard to train. had to play with weight initialization a lot and learning rate. Only got it to 49% accurate on 1M text size. Tried using `h` and `o` from RNN 1 as input to RNN 2. This was done with chunks.
 * [Generate obama speeches using 2 stacked RNNs but non-chunked](notebooks/RNN-generate-stacked-nonchunked-obama.ipynb) Slow but easier to understand since `h` is just a vector not a matrix.
+* [GRU: Generate obama speeches](notebooks/GRU-generate-obama.ipynb) Use GRU with much deeper bptt than 8 chars.
 
 ## Transducers
 
