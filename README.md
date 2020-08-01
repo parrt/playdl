@@ -89,10 +89,10 @@ Ok, starting again using simple RNN using matrix alg from my article.
 * [Generate lastnames for specific language](notebooks/RNN-generate-lastname.ipynb)
 * [Generate obama speeches](notebooks/RNN-generate-obama.ipynb) This works but the hidden state is reset at the start of every small chunk in order to get truncated back propagation.
 * [Generate obama speeches, truncated backpropagation](notebooks/RNN-generate-bptt-obama.ipynb) This version attempts to  divide up the entire text into chunks and then use a single batch containing all chunks. Then inside the training loop I can occasionally wipe out the gradient but keep the hidden state accumulating.
-* [Generate obama speeches, add embedding layer](notebooks/RNN-generate-embedding-obama.ipynb) Adding embedding of chars before RNN helps. make len(vocab)->small embedding like 20 squeezes into more meaningful embedding than one of size len(vocab).
+* [Generate obama speeches, add embedding layer](notebooks/RNN-generate-embedding-obama.ipynb) Adding embedding of chars before RNN helps. make len(vocab)->small embedding like 20 squeezes into more meaningful embedding than one of size len(vocab). Fix `sample()` so that it doesn't reprocess the entire growing string each time. It's now linear.
 * [Generate obama speeches using 2 stacked RNNs](notebooks/RNN-generate-stacked-obama.ipynb). REALLY hard to train. had to play with weight initialization a lot and learning rate. Only got it to 49% accurate on 1M text size. Tried using `h` and `o` from RNN 1 as input to RNN 2. This was done with chunks.
 * [Generate obama speeches using 2 stacked RNNs but non-chunked](notebooks/RNN-generate-stacked-nonchunked-obama.ipynb) Slow but easier to understand since `h` is just a vector not a matrix.
-* [GRU: Generate obama speeches](notebooks/GRU-generate-obama.ipynb) Use GRU with much deeper bptt than 8 chars. Oh and get non-quadratic `sample()` function.  Try to do [nucleas sampling](https://arxiv.org/pdf/1904.09751.pdf) also. Maybe beam search too.
+* [GRU: Generate obama speeches](notebooks/GRU-generate-obama.ipynb) Use GRU with much deeper bptt than 8 chars. Oh and get non-quadratic `sample()` function.  Uses [nucleus sampling](https://arxiv.org/pdf/1904.09751.pdf) also. Maybe beam search too. nah. no beam search.
 
 ## Transducers
 
