@@ -100,6 +100,10 @@ Ok, starting again using simple RNN using matrix alg from my article.
 * [Record-by-record RNN Encoder-decoder](notebooks/encoder-decoder.ipynb) An RNN computes `h` context vector for input and then we use that context + RNN to generate tokens from output sequence.  Convert 'twenty one' to '21', etc...
 * [Vectorized RNN Encoder-decoder](notebooks/encoder-decoder-vectorized.ipynb) Vectorize the encoder-decoder from previous notebook
 
+## Attention
+
+* [RNN/GRU encoder-decoder for French->English](notebooks/FrenchEnglish-transducer.ipynb) Improved the RNN/GRU/Linear objects.  Will try some kind of attention.
+
 ## Lessons
 
 Some notes beyond what is in the notebooks
