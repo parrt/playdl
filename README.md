@@ -103,7 +103,8 @@ Ok, starting again using simple RNN using matrix alg from my article.
 ## Attention
 
 * [RNN/GRU encoder-decoder for French->English](notebooks/FrenchEnglish-transducer.ipynb) Improved the RNN/GRU/Linear objects.  Will try some kind of attention.
-
+* [Refactored RNN human numbers to integer value classifier](notebooks/encoder-decoder-refactored.ipynb) Having trouble getting Fr->En working so go back to human numbers with same code.
+  
 ## Lessons
 
 Some notes beyond what is in the notebooks
@@ -113,3 +114,5 @@ Some notes beyond what is in the notebooks
 * Training is **super** sensitive to weight initialization. Using sd=0.001 training didn't move. With 1.0 it is too far away sometimes from final weights. Couldn't figure out why my stacked RNN wasn't training. sd=0.001 seems too low. Well, if you run multiple times with sd=0.001 sometimes it works. frustrating to train these beasts. Even more complicated. Seems to eventually start to convert/train after maybe 10 trivial/no movements. 
 * A general principle for autograd with pytorch: you can’t reuse partial results from one optimization step to the next, despite that being OK if we were doing symbolic derivatives. It’s just a limitation of how dynamic auto gradients are computed. E.g., I wanted to use a single output vector (the last `h`) from the encoder in the multiple steps of the decoder but got the dreaded `Trying to backward through the graph a second time, but the buffers have already been freed.` Each decoder step is a function of that previous single encoder `h` and pytorch can only compute the derivative through a series of operations once.  Tried `loss.backward(retain_graph=True)` w/o success too.
 * another weird detail. h in RNN becomes H matrix for batches, one h vector per record of batch. Now, if we add a bias term, we also need bias per record so B matrix not vector. Now, when using (not training) decoder to generate result, we are doing one record so we need one bias. which bias? hahah. I’ve just been doing `B[:,0]` picking one. is that right?  i.e., we’ve trained `batch_size` bias vectors but use only one during generation. which bias do we use?! Ah. just use bias vector and broadcasting does the rest. so it's b not B.
+
+*  Weight matrix initialization matters a huge amount. I was trying to do concatenation of a context vector with an input vector for a decoder but it was not training well at all. When I use a separate matrix to bring in the context in the decoder, I was initializing Matt to the identity matrix so that it brought context in unaltered.  However, when concatenating I was using a random matrix for the combined input and context vectors.  This got noticeably worse performance. Presumably in the end this would train just as well but it is much slower at the very least. Perhaps it wouldn't even find the right spot with gradient descent.  Wow. even the stddev matters for randn matrics. If too tight, doesn't train in some cases. Might also be reverse!
