@@ -104,7 +104,9 @@ Ok, starting again using simple RNN using matrix alg from my article.
 
 * [RNN/GRU encoder-decoder for French->English](notebooks/FrenchEnglish-transducer.ipynb) Improved the RNN/GRU/Linear objects.  Will try some kind of attention.
 * [Refactored RNN human numbers to integer value classifier](notebooks/encoder-decoder-refactored.ipynb) Having trouble getting Fr->En working so go back to human numbers with same code.
-  
+* [Vectorized RNN/GRU encoder-decoder for French->English](notebooks/FrenchEnglish-vectorized-transducer.ipynb) Vectorized to do batch of phrases at once.
+* [Vectorized RNN/GRU encoder-decoder for French->English](notebooks/FrenchEnglish-attention.ipynb) Add attention to translation. I left off here. Attention with non-contextualized GRU seems to work as well or better than simple GRU with context for decoder.
+
 ## Lessons
 
 Some notes beyond what is in the notebooks
